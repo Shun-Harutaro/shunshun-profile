@@ -9,16 +9,15 @@ body, div, section, p, h1, h2, h3, ul, figure {
   margin: 0;
   padding: 0;
 }
-section {
-  margin: 50px;
-}
 main {
+  margin: 5px;
   padding: 10px;
   max-width: 1500px;
 }
 @media screen and (min-width: 768px) {
   main {
-    padding: 20px;
+    margin: 80px;
+    padding: 5px;
   }
 }
 h2 {
@@ -38,6 +37,9 @@ img {
 }
 a {
   color: blue;
+}
+a:hover {
+  opacity: 0.5;
 }
 .btn {
   color: #fff;
@@ -73,15 +75,16 @@ header {
 
 }
 .link li {
-  display: inline;
+  vertical-align: middle;
+  display: inline-block;
   margin: 0 30px 0 0;
-
+  padding: 2px;
 }
 .link i {
   color: #393939;
-  padding: 2px;
 }
 .blog {
+  font-size: 20px;
   font-weight: bold;
   text-decoration: none;
   color: #393939;
@@ -95,12 +98,25 @@ header {
 }
 .skills li {
   float: left;
-  margin: 0 0 10px 10px;
-  width: 100px;
+  margin: 0 0 5px 5px;
+  width: 70px;
   border: 1px solid #ccc;
   padding: 4px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 15px;
+}
+.skills li p {
+  font-size: 13px;
+}
+@media screen and (min-width: 768px) {
+  .skills li {
+    margin: 0 0 20px 20px;
+    width: 100px;
+    font-size: 16px;
+  }
+  .skills li p {
+    font-size: 16px;
+  }
 }
 
 /*other*/
@@ -129,6 +145,8 @@ header {
 .site img {
   width: 180px;
 }
-small {
-  margin: auto;
+footer {
+  padding: 10px;
+  text-align: center;
+  clear: left;
 }
